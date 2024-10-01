@@ -18,6 +18,10 @@ Route::get('/', function () {
 });
 
 Route::get('/home',function(){
-    return view('home');
+   $nom ='coco';
+ //   return view('home', [
+//        'nom'=>$nom,
+ //   ]);
 
-});
+return view('home',compact('nom'));
+ });
