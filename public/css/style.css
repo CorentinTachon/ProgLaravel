@@ -1,0 +1,37 @@
+/* Table styles */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black; /* ajout d'une bordure noire autour du tableau */
+}
+
+th, td {
+    border: 1px solid black; /* bordures noires pour les cellules */
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #ccc;
+}
+
+/* ajout de styles pour les colonnes par attribut */
+th[id] {
+    background-color: #ccc; /* fond gris clair pour les colonnes avec un id */
+}
+
+th[desc] {
+    background-color: #eee; /* fond gris moyen pour les colonnes avec un desc */
+}
+
+th[label] {
+    background-color: #ddd; /* fond gris foncé pour les colonnes avec un label */
+}
